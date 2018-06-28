@@ -16,6 +16,10 @@
 
 apply plugin: 'io.spring.convention.spring-sample-war'
 
+repositories {
+  mavenLocal()
+}
+
 dependencies {
 	compile jstlDependencies
 	compile slf4jDependencies

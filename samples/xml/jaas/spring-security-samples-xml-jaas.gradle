@@ -15,6 +15,10 @@
  */
 apply plugin: 'io.spring.convention.spring-sample-war'
 
+repositories {
+  mavenLocal()
+}
+
 dependencies {
 	compile project(':spring-security-core')
 	compile 'org.springframework:spring-beans'

@@ -3,6 +3,7 @@ apply plugin: 'aspectj'
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {

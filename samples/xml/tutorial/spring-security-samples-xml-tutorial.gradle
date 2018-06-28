@@ -1,5 +1,9 @@
 apply plugin: 'io.spring.convention.spring-sample-war'
 
+repositories {
+  mavenLocal()
+}
+
 dependencies {
 	compile project(':spring-security-core')
 	compile slf4jDependencies

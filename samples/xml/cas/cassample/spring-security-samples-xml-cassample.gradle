@@ -3,6 +3,9 @@ apply plugin: 'io.spring.convention.spring-sample-war'
 def keystore = "$rootDir/samples/certificates/server.jks"
 def password = 'password'
 
+repositories {
+  mavenLocal()
+}
 
 sourceSets {
 	test.resources.exclude 'GebConfig.groovy'

@@ -10,6 +10,9 @@ buildscript {
 	}
 }
 
+repositories {
+  mavenLocal()
+}
 
 // Remove logback as it causes security issues with GAE.
 configurations.runtime.exclude(group: 'ch.qos.logback')

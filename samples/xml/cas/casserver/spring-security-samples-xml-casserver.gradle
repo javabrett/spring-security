@@ -5,6 +5,10 @@ apply plugin: 'io.spring.convention.spring-sample-war'
 def keystore = "$rootDir/samples/certificates/server.jks"
 def password = 'password'
 
+repositories {
+	mavenLocal()
+}
+
 dependencies {
 	compile "org.jasig.cas:cas-server-webapp:4.0.0@war"
 	compile slf4jDependencies
